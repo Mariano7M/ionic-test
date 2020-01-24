@@ -36,7 +36,7 @@ export class Tab2Page {
 
   async showAlert(dto: Dto) {
     const alert = await this.alertController.create({
-      header: 'Alert',
+      header: dto.title,
       message: dto.text,
       buttons: ['OK']
     });
